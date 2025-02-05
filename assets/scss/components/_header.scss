@@ -1,1 +1,47 @@
 // header style
+.header{
+    width: 100%;
+    background-color: transparent;
+    &__mobile{
+        display: none;
+        background: none;
+        border: 1px solid var(--color-black);
+        border-radius: 16px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-logo-link{
+            font-size: 18px;
+        }
+        &-menu{
+            &-list{
+                display: flex;
+                padding: 0;
+                &-item{
+                    padding: 12px;
+                }
+            }
+        }
+        &-feedback{
+            display: flex;
+            padding: 0;
+            align-items: center;
+            &-link{
+                padding: 12px 32px;
+                font-size: 14px;
+                border: 1px solid var(--color-black);
+                border-radius: 28px;
+            }
+            &-arrow{
+                padding: 10px;
+                font-size: 18px;
+                border: 1px solid var(--color-black);
+                border-radius: 48px;
+            }
+        }
+    }
+}

@@ -10,12 +10,40 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="/assets/style/normalize.min.css">
     <link rel="stylesheet" href="/assets/style/main-style.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
     <script defer src="/assets/javascript/application.js"></script>
 </head>
 <body class="application">
     <div class="application__template">
         <header class="application__header header" id="header">
-            
+            <div class="container header__container">
+                <nav class="header__nav">
+                    <div class="header__nav-logo">
+                        <a aria-label="Лого сайта" href="/index.html" class="header__nav-logo-link">LENSORIA</a>
+                    </div>
+                    <div class="header__nav-menu">
+                        <ul class="header__nav-menu-list">
+                            <li class="header__nav-menu-list-item">
+                                <a href="/index.html" class="header__nav-menu-list-itemLink">Home</a>
+                            </li>
+                            <li class="header__nav-menu-list-item">
+                                <a href="/about.html" class="header__nav-menu-list-itemLink">Abous Us</a>
+                            </li>
+                            <li class="header__nav-menu-list-item">
+                                <a href="/works.html" class="header__nav-menu-list-itemLink">Work</a>
+                            </li>
+                            <li class="header__nav-menu-list-item">
+                                <a href="/service.html" class="header__nav-menu-list-itemLink">Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__nav-feedback">
+                        <a href="/contact.html" class="header__nav-feedback-link">Contact Us</a>
+                        <a href="/contact.html" class="header__nav-feedback-arrow"><i class="header__nav-feedback-arrow-icon ri-arrow-right-up-long-line"></i></a>
+                    </div>
+                </nav>
+                <button class="header__btn header__mobile"><i class="header__mobile-icon ri-menu-3-line"></i></button>
+            </div>
         </header>
         <main class="application__main main" id="main">
             <div class="main__content" id="main-content">
