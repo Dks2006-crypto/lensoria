@@ -1,0 +1,40 @@
+.about {
+    width: 100%;
+    padding-top: 80px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+
+        &-header {
+            &-name {
+                padding: 8px 12px;
+                border: 1px solid #000000;
+                font-size: 14px;
+                font-weight: 500;
+                border-radius: 28px;
+            }
+        }
+
+        &-core {
+            display: flex;
+            gap: 25px;
+
+            &-slider {
+                position: relative;
+
+                &-shadow {
+                    position: absolute;
+                    top: 0;
+                    border-top-left-radius: 28px;
+                    border-top-right-radius: 28px;
+                    height: 128px;
+                    width: 100%;
+                    background: rgb(27, 27, 27);
+                    background: linear-gradient(180deg, rgba(27, 27, 27, 1) 0%, rgba(217, 217, 217, 1) 100%);
+                }
+            }
+        }
+    }
+}

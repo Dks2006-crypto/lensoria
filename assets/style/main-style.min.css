@@ -65,6 +65,8 @@
 
 button {
   cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .header {
@@ -204,4 +206,38 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 28px;
   background-color: rgba(255, 255, 255, 0.16);
+}
+
+.about {
+  width: 100%;
+  padding-top: 80px;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.about__content-header-name {
+  padding: 8px 12px;
+  border: 1px solid #000000;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 28px;
+}
+.about__content-core {
+  display: flex;
+  gap: 25px;
+}
+.about__content-core-slider {
+  position: relative;
+}
+.about__content-core-slider-shadow {
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  height: 128px;
+  width: 100%;
+  background: rgb(27, 27, 27);
+  background: linear-gradient(180deg, rgb(27, 27, 27) 0%, rgb(217, 217, 217) 100%);
 }/*# sourceMappingURL=main-style.min.css.map */
