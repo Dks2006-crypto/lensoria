@@ -1,7 +1,7 @@
 :root {
   --color-white: #fff;
   --color-black: #000;
-  --content-width: 1200px;
+  --content-width: 1440px;
   --container-padding: 15px;
   --container-width: calc(var(--content-width) + (var(--container-padding) * 2));
   --font-size: 16px;
@@ -94,20 +94,114 @@ button {
 .header__nav-menu-list-item {
   padding: 12px;
 }
-.header__nav-feedback {
+.header__nav-feedback-link {
+  font-size: 14px;
+}
+
+.feedback__btns {
   display: flex;
   padding: 0;
   align-items: center;
 }
-.header__nav-feedback-link {
+.feedback__link {
   padding: 12px 32px;
-  font-size: 14px;
   border: 1px solid var(--color-black);
   border-radius: 28px;
 }
-.header__nav-feedback-arrow {
+.feedback__arr {
   padding: 10px;
   font-size: 18px;
   border: 1px solid var(--color-black);
   border-radius: 48px;
+}
+
+.welcome {
+  width: 100%;
+  padding-top: 25px;
+}
+.welcome__content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.welcome__content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.welcome__content-left-desc {
+  display: flex;
+  flex-direction: column;
+}
+.welcome__content-left-desc-title {
+  font-size: 64px;
+  font-weight: 600;
+  margin: 0;
+}
+.welcome__content-left-desc-text {
+  font-size: 14px;
+}
+.welcome__content-left-desc-feedback {
+  padding-top: 40px;
+  color: var(--color-accent);
+}
+.welcome__content-left-desc-feedback-link {
+  background-color: var(--color-black);
+}
+.welcome__content-left-desc-feedback-arrow {
+  background-color: var(--color-black);
+}
+.welcome__footer {
+  width: 100%;
+  background-color: var(--color-accent);
+}
+.welcome__footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome__footer-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+.welcome__footer-left-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+.welcome__footer-left-images {
+  display: flex;
+  min-width: 152px;
+}
+.welcome__footer-left-img-1 {
+  position: absolute;
+  left: -5px;
+  top: 5px;
+}
+.welcome__footer-left-img-2 {
+  position: absolute;
+  left: 30px;
+  top: 5px;
+}
+.welcome__footer-left-img-3 {
+  position: absolute;
+  left: 65px;
+  top: 5px;
+}
+.welcome__footer-left-img-4 {
+  position: absolute;
+  left: 100px;
+  top: 5px;
+}
+.welcome__footer-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.welcome__footer-right-dignity {
+  padding: 12px 32px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 28px;
+  background-color: rgba(255, 255, 255, 0.16);
 }/*# sourceMappingURL=main-style.min.css.map */

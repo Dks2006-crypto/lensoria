@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,10 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="/assets/style/normalize.min.css">
     <link rel="stylesheet" href="/assets/style/main-style.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
     <script defer src="/assets/javascript/application.js"></script>
 </head>
+
 <body class="application">
     <div class="application__template">
         <header class="application__header header" id="header">
@@ -37,9 +39,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="header__nav-feedback">
-                        <a href="/contact.html" class="header__nav-feedback-link">Contact Us</a>
-                        <a href="/contact.html" class="header__nav-feedback-arrow"><i class="header__nav-feedback-arrow-icon ri-arrow-right-up-long-line"></i></a>
+                    <div class="header__nav-feedback feedback__btns">
+                        <a href="/contact.html" class="header__nav-feedback-link feedback__link">Contact Us</a>
+                        <a href="/contact.html" class="header__nav-feedback-arrow feedback__arr"><i
+                                class="header__nav-feedback-arrow-icon ri-arrow-right-up-long-line"></i></a>
                     </div>
                 </nav>
                 <button class="header__btn header__mobile"><i class="header__mobile-icon ri-menu-3-line"></i></button>
@@ -47,7 +50,65 @@
         </header>
         <main class="application__main main" id="main">
             <div class="main__content" id="main-content">
-                <!-- контент страницы сайта -->                
+                <section class="main__section welcome">
+                    <div class="container welcome__container">
+                        <div class="welcome__content">
+                            <div class="welcome__content-left">
+                                <div class="welcome__content-left-desc">
+                                    <h1 class="welcome__content-left-desc-title">Capturing Life’s Moments,
+                                        Turning Memories into Timeless Visual Masterpieces</h1>
+                                    <p class="welcome__content-left-desc-text">We specialize in preserving your
+                                        cherished moments through <br>stunning photography</p>
+                                    <div class="welcome__content-left-desc-feedback feedback__btns">
+                                        <a href="/booking.html"
+                                            class="welcome__content-left-desc-feedback-link feedback__link">Book A
+                                            Call</a>
+                                        <a href="/booking.html"
+                                            class="welcome__content-left-desc-feedback-arrow feedback__arr"><i
+                                                class="header__nav-feedback-arrow-icon ri-arrow-right-up-long-line"></i></a>
+                                    </div>
+                                </div>
+                                <div class="welcome__content-left-images">
+                                    <img src="/assets/image/welc-img-small.png" alt=""
+                                        class="welcome__content-left-img">
+                                    <img src="/assets/image/welc-img-small.png" alt=""
+                                        class="welcome__content-left-img">
+                                    <img src="/assets/image/welc-img-small.png" alt=""
+                                        class="welcome__content-left-img">
+                                </div>
+                            </div>
+                            <div class="welcome__content-right">
+                                <img src="/assets/image/welc-img-accent.png" alt=""
+                                    class="welcome__content-right-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="welcome__footer">
+                        <div class="container welcome__footer-container">
+                            <div class="welcome__footer-left">
+                                <div class="welcome__footer-left-images">
+                                    <img src="/assets/image/welc-img-footer.png" alt=""
+                                        class="welcome__footer-left-img welcome__footer-left-img-1">
+                                    <img src="/assets/image/welc-img-footer.png" alt=""
+                                        class="welcome__footer-left-img welcome__footer-left-img-2">
+                                    <img src="/assets/image/welc-img-footer.png " alt=""
+                                        class="welcome__footer-left-img welcome__footer-left-img-3">
+                                    <img src="/assets/image/welc-img-footer.png" alt=""
+                                        class="welcome__footer-left-img welcome__footer-left-img-4">
+                                </div>
+                                <p class="welcome__footer-left-text">
+                                    32k people happy with <br>our service
+                                </p>
+                            </div>
+                            <div class="welcome__footer-right">
+                                <span class="welcome__footer-right-dignity">Landscape</span>
+                                <span class="welcome__footer-right-dignity">Potrait</span>
+                                <span class="welcome__footer-right-dignity">Project</span>
+                                <span class="welcome__footer-right-dignity">Event</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
         <footer class="application__footer footer">
@@ -55,4 +116,5 @@
         </footer>
     </div>
 </body>
+
 </html>

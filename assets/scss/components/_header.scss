@@ -27,21 +27,28 @@
             }
         }
         &-feedback{
-            display: flex;
-            padding: 0;
-            align-items: center;
             &-link{
-                padding: 12px 32px;
                 font-size: 14px;
-                border: 1px solid var(--color-black);
-                border-radius: 28px;
-            }
-            &-arrow{
-                padding: 10px;
-                font-size: 18px;
-                border: 1px solid var(--color-black);
-                border-radius: 48px;
             }
         }
+    }
+}
+
+.feedback{
+    &__btns{
+        display: flex;
+        padding: 0;
+        align-items: center;
+    }
+    &__link{
+        padding: 12px 32px;
+        border: 1px solid var(--color-black);
+        border-radius: 28px;
+    }
+    &__arr{
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid var(--color-black);
+        border-radius: 48px;
     }
 }

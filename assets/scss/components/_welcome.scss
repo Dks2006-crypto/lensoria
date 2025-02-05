@@ -1,0 +1,91 @@
+.welcome{
+    width: 100%;
+    padding-top: 25px;
+    &__content{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        &-left{
+            display: flex;
+            flex-direction: column;
+            gap: 120px;
+            &-desc{
+                display: flex;
+                flex-direction: column;
+                &-title{
+                    font-size: 64px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                &-text{
+                    font-size: 14px;
+
+                }
+                &-feedback{
+                    padding-top: 40px;
+                    color: var(--color-accent);
+                    &-link{
+                        background-color: var(--color-black);
+                    }
+                    &-arrow{
+                        background-color: var(--color-black);
+                    }
+                }
+            }
+        }
+    }
+    &__footer{
+        width: 100%;
+        background-color: var(--color-accent);
+        &-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-left{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+            &-text{
+                font-size: 16px;
+                font-weight: 600;
+            }
+            &-images{
+                display: flex;
+                min-width: 152px;
+            }
+            &-img-1{
+                position: absolute;
+                left: -5px;
+                top: 5px;
+            }
+            &-img-2{
+                position: absolute;
+                left: 30px;
+                top: 5px;
+            }
+            &-img-3{
+                position: absolute;
+                left: 65px;
+                top: 5px;
+            }
+            &-img-4{
+                position: absolute;
+                left: 100px;
+                top: 5px;
+            }
+        }
+        &-right{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            &-dignity{
+                padding: 12px 32px;
+                border: 1px solid rgba($color: #000000, $alpha: .08);
+                border-radius: 28px;
+                background-color: rgba($color: #ffffff, $alpha: .16);
+            }
+        }
+    }
+}
