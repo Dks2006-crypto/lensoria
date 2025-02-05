@@ -1,0 +1,100 @@
+.wework{
+    width: 100%;
+    padding-top: 50px;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        &-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            &-desc{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                &-name{
+                    padding: 8px 12px;
+                    border: 1px solid #000000;
+                    font-size: 14px;
+                    font-weight: 500;
+                    border-radius: 28px;
+                }
+            }
+            &-feedback{
+                &-link{
+                    background-color: var(--color-black);
+                    color: var(--color-white);
+                }
+                &-arr{
+                    background-color: var(--color-black);
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+}
+
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all ease 1s;
+    &__category{
+        position: absolute;
+        top: 24px;
+        right: 70px;
+        color: var(--color-white);
+        border: 1px solid var(--color-white);
+        border-radius: 28px;
+        padding: 8px 12px;
+    }
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 28px;
+    }
+    &__detail{
+        position: relative;
+        position: absolute;
+        bottom: 25px;
+        left: 100px;
+        display: flex;
+        background-color: rgba($color: #ffffff, $alpha: .18);
+        align-items: center;
+        padding: 12px;
+        border-radius: 14px;
+        color: var(--color-black);
+        gap: 75px;
+        &-desc{
+            text-align: left;
+            &-title{
+                font-size: 24px;
+                margin: 0;
+            }
+            &-text{
+                font-size: 14px;
+                margin: 0;
+                padding-top: 10px;
+            }
+        }
+        &-link{
+            font-size: 20px;
+            padding: 14px;
+            background-color: var(--color-black);
+            color: var(--color-white);
+            border-radius: 28px;
+        }
+        &-all-link{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

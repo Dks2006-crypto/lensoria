@@ -1,7 +1,7 @@
 .about {
     width: 100%;
     padding-top: 80px;
-
+    background-color: var(--color-background-gr);
     &__content {
         display: flex;
         flex-direction: column;
@@ -34,7 +34,64 @@
                     background: rgb(27, 27, 27);
                     background: linear-gradient(180deg, rgba(27, 27, 27, 1) 0%, rgba(217, 217, 217, 1) 100%);
                 }
+                &-category{
+                    position: absolute;
+                    top: 10px;
+                    left: 24px;
+                    color: white;
+                    padding: 8px 12px;
+                    border-radius: 28px;
+                    font-size: 14px;
+                    border: 1px solid var(--color-white);
+                }
+            }
+            &-desc{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                &-text{
+                    font-size: 24px;
+                }
+                
+            }
+            &-image{
+                position: relative;
+                &-shadow{
+                    position: absolute;
+                    top: 0;
+                    border-top-left-radius: 28px;
+                    border-top-right-radius: 28px;
+                    height: 128px;
+                    width: 100%;
+                    background: rgb(27, 27, 27);
+                    background: linear-gradient(180deg, rgba(27, 27, 27, 1) 0%, rgba(217, 217, 217, 1) 100%);
+                }
+                &-category{
+                    position: absolute;
+                    top: 20px;
+                    left: 24px;
+                    color: white;
+                    padding: 8px 12px;
+                    border-radius: 28px;
+                    font-size: 14px;
+                    border: 1px solid var(--color-white);
+                }
+            }
+            &-img{
+                border-radius: 28px;
             }
         }
+    }
+}
+.slider__controller{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &-btn{
+        font-size: 20px;
+        padding: 14px;
+        border: 1px solid var(--color-black);
+        border-radius: 50%;
     }
 }
