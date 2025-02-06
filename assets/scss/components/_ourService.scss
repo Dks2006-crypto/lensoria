@@ -1,0 +1,110 @@
+.ourService{
+    padding-top: 80px;
+    width: 100%;
+    padding-bottom: 80px;
+    background-color: var(--color-background-gr);
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        &-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            &-desc{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                align-items: start;
+                &-title{
+                    font-size: 40px;
+                    margin: 0;
+                }
+            }
+            &-links{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                &-search{
+                    background-color: var(--color-white);
+                    border-radius: 36px;
+                    border: 1px solid #EBEBEB;
+                    padding: 4px;
+                    &-input{
+                        background-color: transparent;
+                        border: none;
+                        padding: 10px 12px;
+                    }
+                    &-label{
+                        padding: 6px;
+                        background-color: var(--color-black);
+                        color: var(--color-white);
+                        border-radius: 24px;
+                    }
+                }
+                &-feedback{
+                    color: var(--color-white);
+                    &-arr{
+                        background-color: var(--color-black);
+                    }
+                    &-link{
+                        background-color: var(--color-black);
+                    }
+                }
+            }
+        }
+        &-office{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            &-event{
+                display: flex;
+                justify-content: space-between;
+                &-content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                    &-head{
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-between;
+                        &-desc{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 12px;
+                            max-width: 542px;
+                        }
+                        &-link{
+                            background-color: var(--color-black);
+                            color: var(--color-white);
+                        }
+                    }
+                }
+            }
+            &-card{
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                background-color: var(--color-white);
+                border-radius: 12px;
+                padding: 24px;
+                &-version{
+                    max-width: 431px;
+                    display: flex;
+                    flex-direction: column;
+                    &-tags{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    &-tag{
+                        font-size: 14px;
+                    }
+                }
+                &-link{
+                    background-color: var(--color-black);
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+}
