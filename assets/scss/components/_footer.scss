@@ -1,0 +1,128 @@
+.footer{
+    width: 100%;
+    background-color: var(--color-black);
+    padding: 32px;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        &-header{
+            padding: 155px 168px;
+            background-image: url(/assets/image/footer-bg.png);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            gap: 24px;
+            color: var(--color-white);
+            &-name{
+                border-color: var(--color-white);
+            }
+            &-title{
+                font-size: 48px;
+                margin: 0;
+            }
+            &-search{
+                display: flex;
+                align-items: center;
+                background-color: var(--color-background-gr);
+                padding: 4px;
+                border-radius: 36px;
+                &-input{
+                    background-color: transparent;
+                    border: none;
+                    padding: 10px 12px;
+                    padding-right: 100px;
+                }
+                &-label{
+                    padding: 6px;
+                    background-color: var(--color-black);
+                    border-radius: 50%;
+                }
+            }
+        }
+        &-social{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            padding-bottom: 120px;
+            &-left{
+                &-title{
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+            &-right{
+                display: flex;
+                gap: 60px;
+                &-services{
+                    display: flex;
+                    flex-direction: column;
+                    &-title{
+                        font-size: 24px;
+                        margin: 0;
+                        padding-bottom: 24px;
+                    }
+                    &-list{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0;
+                        &-item{
+                            padding: 6px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                &-societal{
+                    display: flex;
+                    flex-direction: column;
+                    &-title{
+                        font-size: 24px;
+                        margin: 0;
+                        padding-bottom: 24px;
+                    }
+                    &-list{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0;
+                        gap: 28px;
+                        &-item{
+                            font-size: 18px;
+                            &-link{
+                                border-color: var(--color-white);
+                            }
+                        }
+                    }
+                }
+                &-about{
+                    display: flex;
+                    flex-direction: column;
+                    &-title{
+                        font-size: 24px;
+                        margin: 0;
+                        padding-bottom: 24px;
+                    }
+                    &-list{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0;
+                        gap: 12px;
+                        &-item{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        &-privacy{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--color-white);
+        }
+    }
+}

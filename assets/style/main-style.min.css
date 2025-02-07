@@ -1030,4 +1030,131 @@ button {
   .question__input:checked ~ .question__desc {
     max-height: 200px;
   }
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--color-black);
+  padding: 32px;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer__content-header {
+  padding: 155px 168px;
+  background-image: url(/assets/image/footer-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 24px;
+  color: var(--color-white);
+}
+.footer__content-header-name {
+  border-color: var(--color-white);
+}
+.footer__content-header-title {
+  font-size: 48px;
+  margin: 0;
+}
+.footer__content-header-search {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-background-gr);
+  padding: 4px;
+  border-radius: 36px;
+}
+.footer__content-header-search-input {
+  background-color: transparent;
+  border: none;
+  padding: 10px 12px;
+  padding-right: 100px;
+}
+.footer__content-header-search-label {
+  padding: 6px;
+  background-color: var(--color-black);
+  border-radius: 50%;
+}
+.footer__content-social {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 120px;
+}
+.footer__content-social-left-title {
+  font-size: 24px;
+  line-height: 32px;
+}
+.footer__content-social-right {
+  display: flex;
+  gap: 60px;
+}
+.footer__content-social-right-services {
+  display: flex;
+  flex-direction: column;
+}
+.footer__content-social-right-services-title {
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 24px;
+}
+.footer__content-social-right-services-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.footer__content-social-right-services-list-item {
+  padding: 6px;
+  font-size: 18px;
+}
+.footer__content-social-right-societal {
+  display: flex;
+  flex-direction: column;
+}
+.footer__content-social-right-societal-title {
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 24px;
+}
+.footer__content-social-right-societal-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 28px;
+}
+.footer__content-social-right-societal-list-item {
+  font-size: 18px;
+}
+.footer__content-social-right-societal-list-item-link {
+  border-color: var(--color-white);
+}
+.footer__content-social-right-about {
+  display: flex;
+  flex-direction: column;
+}
+.footer__content-social-right-about-title {
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 24px;
+}
+.footer__content-social-right-about-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 12px;
+}
+.footer__content-social-right-about-list-item {
+  font-size: 18px;
+}
+.footer__content-privacy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
 }/*# sourceMappingURL=main-style.min.css.map */
