@@ -1,0 +1,155 @@
+.pricing{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--color-background-gr);
+    &__content{
+        display: flex;
+        flex-direction: column;
+        &-header{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 40px;
+            &-title{
+                font-size: 48px;
+                margin: 0;
+            }
+        }
+        &-rate{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            padding-bottom: 24px;
+            &-card{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                background-color: var(--color-white);
+                padding: 32px 16px;
+                border-radius: 24px;
+                &-desc{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    &-price{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        &-title{
+                            font-size: 48px;
+                            margin: 0;
+                            &--active{
+                                color: var(--color-text-gray);
+                                font-size: 16px;
+                                margin: 0;
+                                padding-left: 12px;
+                            }
+                        }
+                    }
+                    &-text{
+                        color: var(--color-text-grey);
+                        margin: 0;
+                    }
+                }
+                &-open{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &-btn{
+                        padding: 12px 90px;
+                        border-radius: 12px;
+                        &--active{
+                            background-color: var(--color-black);
+                            color: var(--color-white);
+                        }
+                    }
+                }
+                &-included{
+                    background-color: var(--color-background-gr);
+                    padding: 12px;
+                    border-radius: 12px;
+                    &-list{
+                        margin: 0;
+                        padding: 0;
+                        &-item{
+                            display: flex;
+                            align-items: center;
+                            padding: 6px;
+                            &-check{
+                                font-size: 19px;
+                            }
+                            &-text{
+                                margin: 0;
+                                padding-left: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-exclusive{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 32px;
+            background-color: var(--color-accent);
+            border-radius: 24px;
+            &-left{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &-desc{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    &-price{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        &-title{
+                            font-size: 48px;
+                            margin: 0;
+                            &--active{
+                                color: var(--color-text-gray);
+                                font-size: 16px;
+                                margin: 0;
+                                padding-left: 12px;
+                            }
+                        }
+                    }
+                    &-text{
+                        color: var(--color-text-grey);
+                        margin: 0;
+                    }
+                }
+            }
+            &-included{
+                padding: 12px;
+                border-radius: 12px;
+                &-list{
+                    background-color: var(--color-black);
+                    margin: 0;
+                    padding: 0;
+                    border-radius: 12px;
+                    &-item{
+                        display: flex;
+                        align-items: center;
+                        padding: 6px;
+                        &-check{
+                            font-size: 19px;
+                            color: var(--color-white);
+                        }
+                        &-text{
+                            color: var(--color-white);
+                            margin: 0;
+                            padding-left: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

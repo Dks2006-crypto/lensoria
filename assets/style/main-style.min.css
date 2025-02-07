@@ -9,6 +9,7 @@
   --color-accent: #DCE9B1;
   --color-text: #1B1B1B;
   --color-background-gr: #F5F5F5;
+  --color-text-gray: #575757;
 }
 
 @font-face {
@@ -704,4 +705,160 @@ button {
 }
 .insight__content-card-text {
   font-size: 14px;
+}
+
+.pricing {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--color-background-gr);
+}
+.pricing__content {
+  display: flex;
+  flex-direction: column;
+}
+.pricing__content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.pricing__content-header-title {
+  font-size: 48px;
+  margin: 0;
+}
+.pricing__content-rate {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding-bottom: 24px;
+}
+.pricing__content-rate-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: var(--color-white);
+  padding: 32px 16px;
+  border-radius: 24px;
+}
+.pricing__content-rate-card-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pricing__content-rate-card-desc-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricing__content-rate-card-desc-price-title {
+  font-size: 48px;
+  margin: 0;
+}
+.pricing__content-rate-card-desc-price-title--active {
+  color: var(--color-text-gray);
+  font-size: 16px;
+  margin: 0;
+  padding-left: 12px;
+}
+.pricing__content-rate-card-desc-text {
+  color: var(--color-text-grey);
+  margin: 0;
+}
+.pricing__content-rate-card-open {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricing__content-rate-card-open-btn {
+  padding: 12px 90px;
+  border-radius: 12px;
+}
+.pricing__content-rate-card-open-btn--active {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.pricing__content-rate-card-included {
+  background-color: var(--color-background-gr);
+  padding: 12px;
+  border-radius: 12px;
+}
+.pricing__content-rate-card-included-list {
+  margin: 0;
+  padding: 0;
+}
+.pricing__content-rate-card-included-list-item {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+.pricing__content-rate-card-included-list-item-check {
+  font-size: 19px;
+}
+.pricing__content-rate-card-included-list-item-text {
+  margin: 0;
+  padding-left: 12px;
+}
+.pricing__content-exclusive {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 32px;
+  background-color: var(--color-accent);
+  border-radius: 24px;
+}
+.pricing__content-exclusive-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pricing__content-exclusive-left-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pricing__content-exclusive-left-desc-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricing__content-exclusive-left-desc-price-title {
+  font-size: 48px;
+  margin: 0;
+}
+.pricing__content-exclusive-left-desc-price-title--active {
+  color: var(--color-text-gray);
+  font-size: 16px;
+  margin: 0;
+  padding-left: 12px;
+}
+.pricing__content-exclusive-left-desc-text {
+  color: var(--color-text-grey);
+  margin: 0;
+}
+.pricing__content-exclusive-included {
+  padding: 12px;
+  border-radius: 12px;
+}
+.pricing__content-exclusive-included-list {
+  background-color: var(--color-black);
+  margin: 0;
+  padding: 0;
+  border-radius: 12px;
+}
+.pricing__content-exclusive-included-list-item {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+.pricing__content-exclusive-included-list-item-check {
+  font-size: 19px;
+  color: var(--color-white);
+}
+.pricing__content-exclusive-included-list-item-text {
+  color: var(--color-white);
+  margin: 0;
+  padding-left: 12px;
 }/*# sourceMappingURL=main-style.min.css.map */
