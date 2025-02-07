@@ -19,12 +19,26 @@
             justify-content: center;
             gap: 24px;
             color: var(--color-white);
+            border-radius: 24px;
+            @include lg{
+                padding-left: 5px;
+                padding-right: 5px;
+            }
             &-name{
                 border-color: var(--color-white);
             }
             &-title{
                 font-size: 48px;
                 margin: 0;
+                @include xxl{
+                    font-size: 36px;
+                }
+                @include xl{
+                    font-size: 28px;
+                }
+                @include md{
+                    font-size: 20px;
+                }
             }
             &-search{
                 display: flex;
@@ -32,11 +46,18 @@
                 background-color: var(--color-background-gr);
                 padding: 4px;
                 border-radius: 36px;
+                @include md{
+                    width: 100%;
+                    justify-content: space-between;
+                }
                 &-input{
                     background-color: transparent;
                     border: none;
                     padding: 10px 12px;
                     padding-right: 100px;
+                    @include md {
+                        padding-right: 12px;
+                    }
                 }
                 &-label{
                     padding: 6px;
@@ -50,15 +71,36 @@
             justify-content: space-between;
             color: white;
             padding-bottom: 120px;
+            @include lg{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            @include md{
+                padding-bottom: 20px;
+            }
             &-left{
                 &-title{
                     font-size: 24px;
                     line-height: 32px;
+                    @include xxl{
+                        font-size: 20px;
+                    }
                 }
             }
             &-right{
                 display: flex;
                 gap: 60px;
+                @include xxl{
+                    gap: 15px;
+                }
+                @include lg{
+                    gap: 30px;
+                }
+                @include md{
+                    flex-direction: column;
+                }
                 &-services{
                     display: flex;
                     flex-direction: column;
@@ -123,6 +165,9 @@
             justify-content: space-between;
             align-items: center;
             color: var(--color-white);
+            @include md{
+                flex-direction: column;
+            }
         }
     }
 }
