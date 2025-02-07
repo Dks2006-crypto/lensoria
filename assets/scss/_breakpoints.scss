@@ -2,30 +2,47 @@ $sm: 390px;
 $md: 576px;
 $lg: 768px;
 $xl: 820px;
+$wxl: 900px;
 $xxl: 990px;
+$desctop: 1200px;
+
 @mixin sm {
     @media (max-width: #{$sm}) {
         @content;
     }
- }
+}
 
- @mixin md {
+@mixin md {
     @media (max-width: #{$md}) {
         @content;
     }
- }
- @mixin lg {
+}
+
+@mixin lg {
     @media (max-width: #{$lg}) {
         @content;
     }
- }
- @mixin xl {
+}
+
+@mixin xl {
     @media (max-width: #{$xl}) {
         @content;
     }
- }
- @mixin xxl {
+}
+@mixin wxl {
+    @media (max-width: #{$wxl}) {
+        @content;
+    }
+}
+
+@mixin xxl {
     @media (max-width: #{$xxl}) {
         @content;
     }
- }
+}
+
+@mixin desctop {
+    @media (max-width: #{$desctop}) {
+        @content;
+    }
+}

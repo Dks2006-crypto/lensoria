@@ -5,17 +5,53 @@
         display: flex;
         align-items: center;
         gap: 15px;
+        @include desctop{
+            flex-direction: column;
+            justify-content: center;
+        }
         &-left{
             display: flex;
             flex-direction: column;
             gap: 120px;
+            @include desctop{
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+            &-images{
+                @include wxl{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                }
+                @include md{
+                    grid-template-columns: 1fr;
+                }
+            }
+            &-img{
+                @include wxl{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
             &-desc{
                 display: flex;
                 flex-direction: column;
+                @include desctop{
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
                 &-title{
                     font-size: 64px;
                     font-weight: 600;
                     margin: 0;
+                    @include lg{
+                        font-size: 48px;
+                    }
+                    @include md{
+                        font-size: 36px;
+                    }
                 }
                 &-text{
                     font-size: 14px;
@@ -33,6 +69,14 @@
                 }
             }
         }
+        &-right{
+            &-image{
+                @include desctop{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
     }
     &__footer{
         width: 100%;
@@ -41,6 +85,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include xl{
+                flex-direction: column;
+            }
         }
         &-left{
             display: flex;
@@ -80,6 +127,10 @@
             display: flex;
             align-items: center;
             gap: 15px;
+            @include md{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
             &-dignity{
                 padding: 12px 32px;
                 border: 1px solid rgba($color: #000000, $alpha: .08);

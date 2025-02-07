@@ -23,6 +23,9 @@
                 padding: 0;
                 &-item{
                     padding: 12px;
+                    @include md{
+                        padding: 6px;
+                    }
                 }
             }
         }
